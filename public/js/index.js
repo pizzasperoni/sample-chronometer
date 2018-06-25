@@ -29,13 +29,19 @@ window.addEventListener("keydown", (e)=>{
 })
 
 window.addEventListener("touchend", (e)=>{
-    if(timer_is_on > 0){
-      stopCount()
-      console.log("stops")
-    }else{
-      startCount()
-      console.log("starts")
-    }
+  if(timer_is_on > 0 && seconds >= 0){
+    stopCount()
+    console.log("stops")
+  }else if(timer_is_on === 0 && seconds > 0){
+    tenths = 0
+    seconds = 0
+    c = 0  
+    startCount()
+    console.log("starts")
+  }else {
+    startCount()
+    console.log("starts")
+  }
 })
 
 function timedCount() {
