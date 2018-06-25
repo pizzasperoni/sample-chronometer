@@ -1,0 +1,17 @@
+body {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffb76b+0,ffa73d+50,ff7c00+51,ff7f04+100;Orange+Gloss */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffb76b+0,ff7f04+53 */
+    height: 360px;
+    /*background: linear-gradient(rgb(231, 54, 0), rgb(252, 113, 0)); /* Standard syntax (must be last) */
+    background-color:#37305c; 
+}
+h1 {
+    font-family: 'Nunito Sans', sans-serif;
+    color: white;
+    font-weight: normal;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+    font-size: 150px;
+    text-align: center;
+}
