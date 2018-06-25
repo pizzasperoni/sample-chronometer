@@ -3,18 +3,29 @@ let seconds = 0
 let tenths = 0
 let t;
 let timer_is_on = 0;
-
+/*
+  estado 1: reloj apagado
+  estado 2: reloj corriendo
+  estado 3: reset-apagado
+*/
 
 window.addEventListener("keydown", (e)=>{
   if (e.keyCode === 32){
-    if(timer_is_on > 0){
+    if(timer_is_on > 0 && seconds >= 0){
       stopCount()
       console.log("stops")
-    }else{
+    }else if(timer_is_on === 0 && seconds > 0){
+      tenths = 0
+      seconds = 0
+      c = 0  
+      startCount()
+      console.log("starts")
+    }else {
       startCount()
       console.log("starts")
     }
   }
+
 })
 
 window.addEventListener("touchend", (e)=>{
